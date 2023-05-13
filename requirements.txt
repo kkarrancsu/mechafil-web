@@ -1,0 +1,5 @@
+pandas==1.5.3
+streamlit
+watchdog
+altair
+mechafil @ git+https://github.com/protocol/filecoin-mecha-twin@arg_for_baseline_power_array

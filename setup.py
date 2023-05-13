@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="mechaFIL",
+    name="mechaFIL-webserver",
     version="1.8",
     author="Maria Silva, Tom Mellan, Kiran Karra, Vik Kalghatgi, Nicola",
     author_email="misilva73@gmail.com, t.mellan@imperial.ac.uk, kiran.karra@gmail.com, vik@protocol.ai",
@@ -15,8 +15,13 @@ setuptools.setup(
         "Documentation": "https://github.com/protocol/mechafil-webserver",
         "Source": "https://github.com/protocol/mechafil-webserver",
     },
-    packages=["mechafil"],
-    install_requires=["pandas==1.5.3", "mechaFIL==1.8", "flask", "streamlit", "watchdog", "matplotlib", "mpld3"],
+    packages=["mechafil-webserver"],
+    install_requires=["pandas==1.5.3", 
+                      "flask", 
+                      "streamlit", 
+                      "watchdog", 
+                      "altair", 
+                      "mechaFIL==1.9"],
     python_requires=">=3.8",
     classifiers=[
         "Programming Language :: Python :: 3",
